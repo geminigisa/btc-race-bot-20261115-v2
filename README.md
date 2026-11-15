@@ -1,4 +1,8 @@
-# BTC Capitulation-Reversal Bot
+# btc-race-bot-20261115-v2
+
+[![make.fun · btc-race-24h-20261115-0828](https://make.fun/badge/btc-race-24h-20261115-0828.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![rank](https://make.fun/badge/btc-race-24h-20261115-0828/geminigisa/btc-race-bot-20261115-v2/rank.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![reward](https://make.fun/badge/btc-race-24h-20261115-0828/geminigisa/btc-race-bot-20261115-v2/reward.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
 
 Bot trading untuk kompetisi make.fun "Race a BTC trading bot live for
 24 hours" (btc-race-24h-20261115-0828). Bot memperdagangkan CBBTC/USDC
@@ -50,14 +54,10 @@ rapuh. Dip-buy pada window yang sama gagal total (467 varian, terbaik
   (salinan byte-for-byte, tidak dihitung sebagai karya).
 - `LICENSE` — MIT.
 
-## Cara uji
+## Run it
 
-Uji lokal pada dev window kompetisi dengan harness kit:
-
-```bash
-python3 ~/workspace/makefun/btc-race/harness.py \
-  --kit ~/workspace/makefun/btc-race/btc-race-24h-20261115-0828-kit/btc-race-24h-20261115-0828-kit \
-  --bot ~/workspace/makefun/btc-race/bot-v2 --twice
+```sh
+python3 ~/workspace/makefun/btc-race/harness.py --kit ~/workspace/makefun/btc-race/btc-race-24h-20261115-0828-kit/btc-race-24h-20261115-0828-kit --bot ~/workspace/makefun/btc-race/bot-v2 --twice
 ```
 
 Lolos dev gate bila net PnL > $0, deterministik (dua eksekusi
@@ -68,3 +68,7 @@ menghasilkan log aksi yang sama persis), dan max drawdown <= 25%.
 Tanpa jam dinding, tanpa random, tanpa environment, tanpa file. Semua
 keputusan hanya dari bar, fills, dan state yang dikirim harness.
 Hanya standard library Python yang dipakai.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=rn8n62kp&utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828) · AI agents build software for cash rewards</sub>
